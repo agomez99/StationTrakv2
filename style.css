@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.content{
+  background-color: #3d32dc;
+
+}
+a {
+  color: white;
+  font-size: 2vw;
+  display: inline-block;
+}
+
+.h1, p.title {
+  font-size: 3vw;
+}
+
+
+.navbar{
+  background-color: #3d32dc;
+  align-items: stretch;
+  display: flex;
+}
+.navbar-brand {
+
+  background-color: #3d32dc;
+  align-items: stretch;
+  display: inline;
+}
+
+.navbar-menu {
+  background: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  font-size: 3em;
+  width: 100;
+}
+
+.navbar-item {
+  color: white;
+  padding: 0;
+  list-style: none;
+  font-size: 8em;
+}
+
+.control {
+  text-align: center;
+}
+
+.ISSPanel {
+  background-color: #3d32dc;
+  z-index: 5;
+  text-align: center;
+  display: inline;
+}
+
+.column.is-4, .column.is-4-tablet {
+  flex: none;
+  width: 33.3%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.tile:not(.is-child) {
+  display: block;
+}
+
+.spacediv {
+  z-index: 3;
+  display: flex;
+}
+
+.section {
+  padding: 0;
+}
+
+.apod {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+}
+
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#titleApp, #animateT {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 10vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  align-self: center;
+  color: white;
+}
+
+#issColumn {
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+}
+
+#apodTile {
+  align-items: center;
+  overflow: auto;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+#apodLink {
+  font-size: 1vw;
+  color: white;
+  padding: 20px;
+}
+.notification.is-info{
+  background-color: #3d32dc;
+}
+span {
+  display: inline-block;
+}
+
+#info {
+  font-size: 3vh;
+  color:white;
+
+}
+.title{
+  text-align: center;
+}
+#spaceImg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#Sdate {
+  font-size: 3vw;
+  text-align: center;
+}
+
+#spaceTitle {
+  text-align: center;
+}
+
+.map-header {
+  padding-top: 25%;
+}
+
+.Row {
+  display: table;
+  width: 90%; /*Optional*/
+  table-layout: fixed; /*Optional*/
+  text-align: left;
+}
+.Column {
+  display: table-cell;
+  width:450px;
+}
+#timeStamp{
+  text-align: center;
+  font-size: 45px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>StationTrak</title>
+	<link href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v0.min.js"></script>
+  
+	<link href="style.css" rel="stylesheet">
+	<script src="script.js" type="text/javascript">
+	</script>
+</head>
+<body>
+	<header>
+		<div>
+			<nav aria-label="main navigation" class="navbar" role="navigation">
+				<div class="navbar-start">
+<!-- navbar items, navbar burger... -->
+				<img alt="logo" src="isslogo2.jpg" style="width:150px;height:100px;"></div>
+				<div >
+  				<ul class="navbar-menu navbar-start is-active">  
+					<li style="padding-right:1em"><a class="navbar-item "><a href="https://www.nasa.gov/mission_pages/station/expeditions/expedition62/index.html">WHO'S ON BOARD?</a></li>
+					<li style="padding-right:1em"><a class="navbar-item "><a href="https://www.nasa.gov/mission_pages/station/main/index.html">OFFICIAL ISS WEBSITE</a></li>
+					<li><a class="navbar-item ">	<a href="https://twitter.com/Space_Station?ref_src=twsrc%5Etfw" 
+						class="twitter-follow-button" 
+						data-show-count="false">Follow @Space_Station</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+						</script></li>
+				</ul>
+			</div>
+				<a href="#apodTile" id="apodLink">NASA Picture Of The Day(APOD)
+				<h2 id="Sdate"></h2></a> <!--not coded for functionality-->
+				 <a aria-expanded="false" aria-label="menu" class="navbar-burger" role="button"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a>
+			</nav>
+		</div>
+	</header>
+	<div>
+		<section class="section" id="animateT">
+			<div class="container">
+				<span class="animated fadeOutRight delay-3s">
+				<h1 class="animated fadeInLeft" id="titleApp"><span class="animated fadeOutRight delay-3s">StationTrak</span></h1>
+				</span>
+			</div>
+		</section>
+    <!--=========middle tile column with iss info and logo-->
+	<div class="column" id="issColumn">
+		<article class="tile is-parent notification is-info is-medium">
+			<h1 id="timeStamp"></h1>
+			<br></br>
+			<div class="Row">
+				<div class="Column">
+					<h1 id="satName"></h1>
+					<p id="positionx"></p>
+					<p id="positiony"></p>
+					<p id="positionz"></p>
+					<p id="alt"></p>
+
+					<img src="./img/marker3.png" style="height:100px" />
+				</div>
+				<br></br>
+				<div class="Column">
+					<h1 id="satName2"></h1>
+
+					<p id="position2"></p>
+					<p id="positionx2"></p>
+					<p id="positiony2"></p>
+					<p id="positionz2"></p>
+					<p id="alt2"></p>
+
+					<img src="./img/marker.png" style="height:100px"/>
+
+				</div>
+				<br></br>
+	
+				<div class="Column">
+					<h1 id="satName3"></h1>
+					<p id="position3"></p>
+					<p id="positionx3"></p>
+					<p id="positiony3"></p>
+					<p id="positionz3"></p>
+					<p id="alt3"></p>
+
+					<img src="./img/marker2.png" style="height:100px" />
+
+				</div>
+			</div>
+	</div>
+
+		</article>
+	</div>
+
+
+	<div class="container" id="map-header-container">
+	<div id="map-header" class="level-item"><p>International Space Station Current Location</p></div> 
+</div>
+</div>
+<div id="map-container" class="level is-mobile">
+	<div id='map' class="level-item is-centered" >
+	</div>
+</div>
+
+    
+
+		
+<!--====APOP tile-->
+	</div>
+	<div class="column is mobile" >
+		
+		<article class="tile is-parent notification is-info">
+			<div class="content">
+				<p class="title">NASA Astronomy Picture of the Day (APOD)</p>
+				<h2 id="Sdate"></h2>
+				<h2 id="spaceTitle"></h2>
+				<img id="spaceImg" src="">
+				<h5 id="info"></h5>
+			</div>
+		</article>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
