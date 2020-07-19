@@ -109,9 +109,9 @@ a {
 }
 
 #issColumn {
-  margin-left: 10%;
-  margin-right: 10%;
-  align-items: center;
+  margin-left: 8%;
+  margin-right: 8%;
+  display:block;
 }
 
 #apodTile {
@@ -169,9 +169,19 @@ span {
 }
 .Column {
   display: table-cell;
+  text-align: center;
+  padding-left:200px;
   width:450px;
+}
+.sat-title{
+  font-size: 45px;
+  text-align:center;
 }
 #timeStamp{
   text-align: center;
-  font-size: 45px;
+  font-size: 15px;
+}
+
+#satName, #satName2, #satName3{
+  font-size:25px;
 }
