@@ -18,6 +18,22 @@ const SES1 = "36516"
  let satName3 = SES1;
 
 
+ fetch("https://where-iss-at.p.rapidapi.com/iss/positions.php/%7Btime%7D", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "where-iss-at.p.rapidapi.com",
+		"x-rapidapi-key": "6bad95638amsh06566d33a230312p133d19jsnb961cf2a2f9a"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.log(err);
+});
+
+
+
 
 
   let getCoords ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName1+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
