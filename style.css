@@ -7,7 +7,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 .content{
-  background-color: #5c86c5;
+  background-color: #000000;
 
 }
 a {
@@ -112,11 +112,9 @@ a {
 }
 
 #issColumn {
-  margin-left: 8%;
-  margin-right: 8%;
   font-size:25px;
   font-weight: bold;
-  display:block;
+  display:flex;
 }
 
 #apodTile {
