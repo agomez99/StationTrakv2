@@ -1,10 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Raleway', sans-serif;
 }
 .content{
-  background-color: #3d32dc;
+  background-color: #5c86c5;
 
 }
 a {
@@ -19,13 +22,13 @@ a {
 
 
 .navbar{
-  background-color: #3d32dc;
+  background-color: #1b2431;
   align-items: stretch;
   display: flex;
 }
 .navbar-brand {
 
-  background-color: #3d32dc;
+  background-color: #bcbdc0;
   align-items: stretch;
   display: inline;
 }
@@ -51,7 +54,7 @@ a {
 }
 
 .ISSPanel {
-  background-color: #3d32dc;
+  background-color: #070708;
   z-index: 5;
   text-align: center;
   display: inline;
@@ -111,6 +114,8 @@ a {
 #issColumn {
   margin-left: 8%;
   margin-right: 8%;
+  font-size:25px;
+  font-weight: bold;
   display:block;
 }
 
@@ -128,7 +133,7 @@ a {
   padding: 20px;
 }
 .notification.is-info{
-  background-color: #3d32dc;
+  background-color: #1b2431;
 }
 span {
   display: inline-block;
@@ -157,8 +162,10 @@ span {
   text-align: center;
 }
 
-.map-header {
-  padding-top: 25%;
+#map-header {
+  padding-top: 5%;
+  color:white;
+  font-size:25px;
 }
 
 .Row {
