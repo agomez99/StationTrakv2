@@ -3,18 +3,18 @@
 $(document).ready(function () {
   //TODAY APOD
   var space2 =
-    "https://api.nasa.gov/planetary/apod?api_key=MpKzhyBTQD2LoeNVs09k3Rl9o9zo84tECIPVFsyK";
+    "https://api.nasa.gov/planetary/apod?api_key=6wtOGAAHfePL0YCbGqDvlmplvw5Rlqkm1PmoVO0v";
 
 
 //NOAA19
 const NOAA19 = "33591";
 //ISS
-const ISS ="25544";
+const AQUA ="27424";
 //SES1
 const SES1 = "36516"
 
  let satName1 = NOAA19;
- let satName2 = ISS;
+ let satName2 = AQUA;
  let satName3 = SES1;
 
 

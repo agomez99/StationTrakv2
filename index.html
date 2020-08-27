@@ -27,13 +27,12 @@
 				<img alt="logo" src="isslogo2.jpg" style="width:150px;height:100px;"></div>
 				<a href="https://www.n2yo.com/" id="apodLink">N2YO 
 				<a href="#apod" id="apodLink">NASA Picture Of The Day(APOD)
-				<h2 id="Sdate"></h2></a> <!--not coded for functionality-->
+				<h2 id="#"></h2></a> <!--not coded for functionality-->
+				<a href="https://nervous-hermann-145a66.netlify.app/" id="apodLink">Daily Horoscope</a>
 				 <a aria-expanded="false" aria-label="menu" class="navbar-burger" role="button"><span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span></a>
 			</nav>
 		</div>
 	</header>
-	<div class="stars"></div>
-
 	<div>
 		<section class="section" id="animateT">
 			<div class="container">
@@ -44,6 +43,14 @@
 		</section>
 		<h1 class="sub-head">A satellite tracker</h1>
 
+		<div style="margin:100px;">
+			<h1 style="color:white; font-size:2rem;">International Space Station</h1>
+			<iframe src="https://isstracker.pl/widget/map?disableInfoBox=1&lang=en"  style="width:100%;height:500px"></iframe>
+		
+		</div>
+		
+
+		<div id="map-header" class="level-item"><p>Other satellites</p></div> 
     <!--=========middle tile column with iss info and logo-->
 	<div  id="issColumn">
 		<article class="tile is-parent notification is-info is-medium" id="plots">
@@ -86,14 +93,12 @@
 
 				</div>
 			</div>
-	</div>
 
 		</article>
 	</div>
 
 
 	<div class="container" >
-	<div id="map-header" class="level-item"><p>International Space Station Current Location</p></div> 
 </div>
 </div>
 <div id="map-container" class="level is-mobile">
@@ -119,8 +124,6 @@
 			</div>
 		</article>
 	</div>
-	<script src="js/main.js"></script>
-
 
 	<footer>
 		<div>
@@ -133,4 +136,6 @@
 		</div>
 	</footer>
 </body>
+<script src="js/main.js"></script>
+
 </html>

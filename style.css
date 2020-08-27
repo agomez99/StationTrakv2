@@ -63,6 +63,8 @@ justify-content: center;
   z-index: 5;
   text-align: center;
   display: inline;
+  padding-bottom: 5%;
+
 }
 
 .title {
@@ -111,14 +113,11 @@ justify-content: center;
   text-shadow: 2px 2px #1c1a74;
 }
 
-
-
-
-
-
 #issColumn {
   font-size:1rem;
   display:inline-block;
+  padding-bottom: 5%;
+
 }
 
 
@@ -164,7 +163,7 @@ margin-bottom:25px;
 }
 
 #map-header {
-  padding-top: 5%;
+  padding-top:3%;
   color:white;
   font-size:2rem;
 }
