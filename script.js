@@ -8,44 +8,31 @@ $(document).ready(function () {
 
 //NOAA19
 const NOAA19 = "33591";
-//ISS
-const AQUA ="27424";
+//AQUA
+const GOES13 ="29155";
 //SES1
-const SES1 = "36516"
+const SES1 = "36516";
+//TERRA
+const TERRA = "25994";
+
 
  let satName1 = NOAA19;
- let satName2 = AQUA;
+ let satName2 = GOES13;
  let satName3 = SES1;
-
-
- fetch("https://where-iss-at.p.rapidapi.com/iss/positions.php/%7Btime%7D", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "where-iss-at.p.rapidapi.com",
-		"x-rapidapi-key": "6bad95638amsh06566d33a230312p133d19jsnb961cf2a2f9a"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.log(err);
-});
-
-
-
-
+  let satName4 = TERRA;
 
   let getCoords ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName1+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
   let getCoords2 ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName2+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
   let getCoords3 ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName3+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords4 ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName4+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
 
   var cords = getCoords;
   var cords2 = getCoords2;
   var cords3 = getCoords3;
+  var cords4 = getCoords4;
 
 
-
+//APOD
   $.ajax({
     url: space2,
     method: "GET",
@@ -70,30 +57,30 @@ const SES1 = "36516"
     $("#positiony").html("longitude: " + y)
     $("#alt").html("Altitude: "+ response.positions[2].sataltitude)
 
-    var times = response.positions[0].timestamp;
-    var ts = times;
-    var ts_ms = ts * 1000;
-    var date_ob = new Date(ts_ms);
-    var year = date_ob.getFullYear();
-    var month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
-    var date = ("0" + date_ob.getDate()).slice(-2);
-    var hours = ("0" + date_ob.getHours()).slice(-2);
-    var minutes = ("0" + date_ob.getMinutes()).slice(-2);
-    var seconds = ("0" + date_ob.getSeconds()).slice(-2);
-    $("#timeStamp").html(
-      "Current Time: " +
-      year +
-      "-" +
-      month +
-      "-" +
-      date +
-      " " +
-      hours +
-      ":" +
-      minutes +
-      ":" +
-      seconds
-    );
+    // var times = response.positions[0].timestamp;
+    // var ts = times;
+    // var ts_ms = ts * 1000;
+    // var date_ob = new Date(ts_ms);
+    // var year = date_ob.getFullYear();
+    // var month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+    // var date = ("0" + date_ob.getDate()).slice(-2);
+    // var hours = ("0" + date_ob.getHours()).slice(-2);
+    // var minutes = ("0" + date_ob.getMinutes()).slice(-2);
+    // var seconds = ("0" + date_ob.getSeconds()).slice(-2);
+    // $("#timeStamp").html(
+    //   "Current Time: " +
+    //   year +
+    //   "-" +
+    //   month +
+    //   "-" +
+    //   date +
+    //   " " +
+    //   hours +
+    //   ":" +
+    //   minutes +
+    //   ":" +
+    //   seconds
+    // );
   });
 
   $.ajax({
@@ -124,6 +111,24 @@ $.ajax({
     $("#alt3").html("Altitude: "+ response.positions[2].sataltitude)
 
 });
+
+
+$.ajax({
+  url: cords4,
+  method: "GET",
+}).then(function (response) {
+  $("#satName4").html(response.info.satname);
+  for (i in response.positions) {
+    y = response.positions[i].satlatitude;
+    x = response.positions[i].satlongitude;
+  }
+  $("#positionx4").html("latitude: " + x )
+    $("#positiony4").html("longitude: " + y)
+    $("#alt4").html("Altitude: "+ response.positions[2].sataltitude)
+
+});
+
+
 });
 
 

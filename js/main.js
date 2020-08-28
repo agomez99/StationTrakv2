@@ -57,16 +57,17 @@ $(document).ready(function() {
     getCurrentStationPosition();
     getCurrentStationPosition2()
     getCurrentStationPosition3()
+    getCurrentStationPosition4()
 
   });
 
   
  
-//ISS
+//NOAA19
   function getCurrentStationPosition() {
     console.log("Getting Station");
     fetch(
-      "https://www.n2yo.com/rest/v1/satellite/positions/25544/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
+      "https://www.n2yo.com/rest/v1/satellite/positions/33591/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
     )
       .then(response => {
         return response.json();
@@ -103,24 +104,11 @@ $(document).ready(function() {
       });
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //SES 1
+//GOES13
   function getCurrentStationPosition2() {
     console.log("Getting Station");
     fetch(
-      "https://www.n2yo.com/rest/v1/satellite/positions/36516/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
+      "https://www.n2yo.com/rest/v1/satellite/positions/29155/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
     )
       .then(response => {
         return response.json();
@@ -159,11 +147,11 @@ $(document).ready(function() {
 
   }
 
-
+//SES1
   function getCurrentStationPosition3() {
     console.log("Getting Station");
     fetch(
-      "https://www.n2yo.com/rest/v1/satellite/positions/33591/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
+      "https://www.n2yo.com/rest/v1/satellite/positions/36516/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
     )
       .then(response => {
         return response.json();
@@ -202,6 +190,48 @@ $(document).ready(function() {
   }
 
 
+
+//TERRA
+  function getCurrentStationPosition4() {
+    console.log("Getting Station");
+    fetch(
+      "https://www.n2yo.com/rest/v1/satellite/positions/25994/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
+    )
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        let coord = projection([
+          data.positions[0].satlongitude,
+          data.positions[0].satlatitude
+        ]);
+
+
+
+        svg
+          .append("image")
+          .attr("x", coord[0])
+          .attr("y", coord[1])
+          .attr("href", "img/station.png")
+          .attr("height", width * 0.1)
+          .attr("width", width * 0.1)
+          .attr(
+            "transform",
+            "translate(" + imgTransformFactor + "," + imgTransformFactor + ")"
+          );
+          svg
+          .append("image")
+          .attr("x", coord[0])
+          .attr("y", coord[1])
+          .attr("href", "img/sat.png")
+          .attr("height", width * 0.03)
+          .attr("width", width * 0.1)
+          .attr(
+            "transform",
+            "translate(" + imgTransformFactor + "," + imgTransformFactor + ")"
+          );
+      });
+  }
 
 
 
