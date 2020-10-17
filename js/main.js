@@ -82,7 +82,7 @@ $(document).ready(function() {
           .append("image")
           .attr("x", coord[0])
           .attr("y", coord[1])
-          .attr("href", "img/station.png")
+          .attr("href", "images/NOAA19.png")
 
           .attr("height", width * 0.1)
           .attr("width", width * 0.1)
@@ -123,7 +123,7 @@ $(document).ready(function() {
           .append("image")
           .attr("x", coord[0])
           .attr("y", coord[1])
-          .attr("href", "img/station.png")
+          .attr("href", "images/AQUA.png")
           .attr("height", width * 0.1)
           .attr("width", width * 0.1)
           .attr(
@@ -168,7 +168,7 @@ $(document).ready(function() {
           .append("image")
           .attr("x", coord[0])
           .attr("y", coord[1])
-          .attr("href", "img/station.png")
+          .attr("href", "images/SES1.jpg")
           .attr("height", width * 0.1)
           .attr("width", width * 0.1)
           .attr(
@@ -212,7 +212,7 @@ $(document).ready(function() {
           .append("image")
           .attr("x", coord[0])
           .attr("y", coord[1])
-          .attr("href", "img/station.png")
+          .attr("href", "images/TERRA.png")
           .attr("height", width * 0.1)
           .attr("width", width * 0.1)
           .attr(
