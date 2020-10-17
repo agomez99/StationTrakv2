@@ -223,7 +223,7 @@ $(document).ready(function() {
           .append("image")
           .attr("x", coord[0])
           .attr("y", coord[1])
-          .attr("href", "img/sat.png")
+          .attr("href", "img/marker4.png")
           .attr("height", width * 0.03)
           .attr("width", width * 0.1)
           .attr(

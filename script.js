@@ -6,25 +6,25 @@ $(document).ready(function () {
     "https://api.nasa.gov/planetary/apod?api_key=6wtOGAAHfePL0YCbGqDvlmplvw5Rlqkm1PmoVO0v";
 
 
-//NOAA19
-const NOAA19 = "33591";
-//AQUA
-const GOES13 ="29155";
-//SES1
-const SES1 = "36516";
-//TERRA
-const TERRA = "25994";
+  //NOAA19
+  const NOAA19 = "33591";
+  //AQUA
+  const GOES13 = "29155";
+  //SES1
+  const SES1 = "36516";
+  //TERRA
+  const TERRA = "25994";
 
 
- let satName1 = NOAA19;
- let satName2 = GOES13;
- let satName3 = SES1;
+  let satName1 = NOAA19;
+  let satName2 = GOES13;
+  let satName3 = SES1;
   let satName4 = TERRA;
 
-  let getCoords ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName1+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
-  let getCoords2 ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName2+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
-  let getCoords3 ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName3+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
-  let getCoords4 ="https://www.n2yo.com/rest/v1/satellite/positions/"+satName4+"/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords = "https://www.n2yo.com/rest/v1/satellite/positions/" + satName1 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords2 = "https://www.n2yo.com/rest/v1/satellite/positions/" + satName2 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords3 = "https://www.n2yo.com/rest/v1/satellite/positions/" + satName3 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords4 = "https://www.n2yo.com/rest/v1/satellite/positions/" + satName4 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
 
   var cords = getCoords;
   var cords2 = getCoords2;
@@ -32,7 +32,7 @@ const TERRA = "25994";
   var cords4 = getCoords4;
 
 
-//APOD
+  //APOD
   $.ajax({
     url: space2,
     method: "GET",
@@ -48,14 +48,14 @@ const TERRA = "25994";
     url: cords,
     method: "GET",
   }).then(function (response) {
-    $("#satName").html( response.info.satname);
+    $("#satName").html(response.info.satname);
     for (i in response.positions) {
       y = response.positions[i].satlatitude;
       x = response.positions[i].satlongitude;
     }
-    $("#positionx").html("latitude: " + x )
+    $("#positionx").html("latitude: " + x)
     $("#positiony").html("longitude: " + y)
-    $("#alt").html("Altitude: "+ response.positions[2].sataltitude)
+    $("#alt").html("Altitude: " + response.positions[2].sataltitude)
 
     // var times = response.positions[0].timestamp;
     // var ts = times;
@@ -87,46 +87,46 @@ const TERRA = "25994";
     url: cords2,
     method: "GET",
   }).then(function (response) {
-    $("#satName2").html( response.info.satname);
+    $("#satName2").html(response.info.satname);
     for (i in response.positions) {
       y = response.positions[i].satlatitude;
       x = response.positions[i].satlongitude;
     }
-    $("#positionx2").html("latitude: " + x )
+    $("#positionx2").html("latitude: " + x)
     $("#positiony2").html("longitude: " + y)
-    $("#alt2").html("Altitude: "+ response.positions[2].sataltitude)
+    $("#alt2").html("Altitude: " + response.positions[2].sataltitude)
 
-});
-$.ajax({
-  url: cords3,
-  method: "GET",
-}).then(function (response) {
-  $("#satName3").html(response.info.satname);
-  for (i in response.positions) {
-    y = response.positions[i].satlatitude;
-    x = response.positions[i].satlongitude;
-  }
-  $("#positionx3").html("latitude: " + x )
+  });
+  $.ajax({
+    url: cords3,
+    method: "GET",
+  }).then(function (response) {
+    $("#satName3").html(response.info.satname);
+    for (i in response.positions) {
+      y = response.positions[i].satlatitude;
+      x = response.positions[i].satlongitude;
+    }
+    $("#positionx3").html("latitude: " + x)
     $("#positiony3").html("longitude: " + y)
-    $("#alt3").html("Altitude: "+ response.positions[2].sataltitude)
+    $("#alt3").html("Altitude: " + response.positions[2].sataltitude)
 
-});
+  });
 
 
-$.ajax({
-  url: cords4,
-  method: "GET",
-}).then(function (response) {
-  $("#satName4").html(response.info.satname);
-  for (i in response.positions) {
-    y = response.positions[i].satlatitude;
-    x = response.positions[i].satlongitude;
-  }
-  $("#positionx4").html("latitude: " + x )
+  $.ajax({
+    url: cords4,
+    method: "GET",
+  }).then(function (response) {
+    $("#satName4").html(response.info.satname);
+    for (i in response.positions) {
+      y = response.positions[i].satlatitude;
+      x = response.positions[i].satlongitude;
+    }
+    $("#positionx4").html("latitude: " + x)
     $("#positiony4").html("longitude: " + y)
-    $("#alt4").html("Altitude: "+ response.positions[2].sataltitude)
+    $("#alt4").html("Altitude: " + response.positions[2].sataltitude)
 
-});
+  });
 
 
 });
