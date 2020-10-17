@@ -1,2 +1,2 @@
 # StationTrakv2
-An updated version of my first group project with more satellites
+A website that tracks the International Space Station as well as other satellites using N2YO API
