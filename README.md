@@ -1,2 +1,2 @@
 # StationTrakv2
-A website that tracks the International Space Station as well as other satellites using N2YO API
+A website that tracks the International Space Station providing information as well as other satellites using N2YO API
