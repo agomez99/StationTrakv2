@@ -5,7 +5,6 @@ $(document).ready(function () {
   var space2 =
     "https://api.nasa.gov/planetary/apod?api_key=6wtOGAAHfePL0YCbGqDvlmplvw5Rlqkm1PmoVO0v";
 
-
   //NOAA19
   const NOAA19 = "33591";
   //AQUA
@@ -21,10 +20,10 @@ $(document).ready(function () {
   let satName3 = SES1;
   let satName4 = TERRA;
 
-  let getCoords = "https://www.n2yo.com/rest/v1/satellite/positions/" + satName1 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
-  let getCoords2 = "https://www.n2yo.com/rest/v1/satellite/positions/" + satName2 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
-  let getCoords3 = "https://www.n2yo.com/rest/v1/satellite/positions/" + satName3 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
-  let getCoords4 = "https://www.n2yo.com/rest/v1/satellite/positions/" + satName4 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords = "https://api.n2yo.com/rest/v1/satellite/positions/" + satName1 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords2 = "https://api.n2yo.com/rest/v1/satellite/positions/" + satName2 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords3 = "https://api.n2yo.com/rest/v1/satellite/positions/" + satName3 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
+  let getCoords4 = "https://api.n2yo.com/rest/v1/satellite/positions/" + satName4 + "/41.702/-76.014/0/300/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII";
 
   var cords = getCoords;
   var cords2 = getCoords2;
