@@ -205,3 +205,10 @@ justify-content: center;
 #apod{
   width:flex;
 }
+
+.center {
+  display: block;
+  margin-left: 60%;
+  margin-right: auto;
+  width: 50%;
+}
