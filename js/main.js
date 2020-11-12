@@ -65,9 +65,9 @@ $(document).ready(function() {
  
 //NOAA19
   function getCurrentStationPosition() {
-    console.log("Getting Station");
+    //console.log("Getting Station");
     fetch(
-      "https://www.n2yo.com/rest/v1/satellite/positions/33591/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
+      "https://api.n2yo.com/rest/v1/satellite/positions/33591/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
     )
       .then(response => {
         return response.json();
@@ -106,9 +106,9 @@ $(document).ready(function() {
 
 //GOES13
   function getCurrentStationPosition2() {
-    console.log("Getting Station");
+    //console.log("Getting Station");
     fetch(
-      "https://www.n2yo.com/rest/v1/satellite/positions/29155/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
+      "https://api.n2yo.com/rest/v1/satellite/positions/29155/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
     )
       .then(response => {
         return response.json();
@@ -149,9 +149,9 @@ $(document).ready(function() {
 
 //SES1
   function getCurrentStationPosition3() {
-    console.log("Getting Station");
+    //console.log("Getting Station");
     fetch(
-      "https://www.n2yo.com/rest/v1/satellite/positions/36516/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
+      "https://api.n2yo.com/rest/v1/satellite/positions/36516/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
     )
       .then(response => {
         return response.json();
@@ -193,9 +193,9 @@ $(document).ready(function() {
 
 //TERRA
   function getCurrentStationPosition4() {
-    console.log("Getting Station");
+    //console.log("Getting Station");
     fetch(
-      "https://www.n2yo.com/rest/v1/satellite/positions/25994/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
+      "https://api.n2yo.com/rest/v1/satellite/positions/25994/29.5891833/-98.6270735/0/1/&apiKey=AFQ4CY-H89EGX-EFBHPT-4BII"
     )
       .then(response => {
         return response.json();

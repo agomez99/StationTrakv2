@@ -35,6 +35,7 @@ $(document).ready(function () {
   $.ajax({
     url: space2,
     method: "GET",
+    mode: "no-cors",
   }).then(function (response) {
     $("#spaceTitle").html(response.title);
     $("#Sdate").html(response.date);
@@ -46,6 +47,8 @@ $(document).ready(function () {
   $.ajax({
     url: cords,
     method: "GET",
+    mode: "no-cors",
+
   }).then(function (response) {
     $("#satName").html(response.info.satname);
     for (i in response.positions) {
