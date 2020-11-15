@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #7F7FD5;  /* fallback for old browsers */
+  background: #0897da;  /* fallback for old browsers */
   font-family: 'Raleway', sans-serif;
 }
 .content{
@@ -19,8 +19,8 @@ a {
 }
 
 .sub-head{
+margin-bottom: 15px;
 font-size:3rem;
-margin-top: -50px;
 display:flex;
 align-items: center;
 justify-content: center;
@@ -121,10 +121,41 @@ justify-content: center;
 }
 
 #apodLink {
-  font-size: 1vw;
+  font-size: 2vh;
   color: white;
   padding: 20px;
 }
+
+#iss{
+  font-size: 3rem;
+
+}
+#facts{
+  font-size: 2rem;
+}
+@media only screen and (max-width: 990px) {
+#banner{
+  display: none;
+}
+#titleApp{
+  font-size: 9vh;
+
+}
+#iss{
+  font-size: 1rem;
+}
+.sub-head{
+  font-size:2rem;
+
+}
+#facts{
+  font-size: 1rem;
+}
+}
+#navlogo{
+  display: none;
+}
+
 .notification.is-info{
   background-color: #1b2431;
 }
@@ -211,4 +242,22 @@ justify-content: center;
   margin-left: 60%;
   margin-right: auto;
   width: 50%;
+}
+
+.container2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
