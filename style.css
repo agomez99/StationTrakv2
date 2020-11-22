@@ -288,7 +288,7 @@ justify-content: center;
     white-space: nowrap;
     font-size: 0.7rem;
   }
-  #navlogo{
+  #navlogo, #navlogo2{
     display: none;
   }
   #currentT{
@@ -296,6 +296,7 @@ justify-content: center;
     text-align: center;
     color: aliceblue;
   }
+
 }
 
 
