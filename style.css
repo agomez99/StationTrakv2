@@ -28,9 +28,9 @@ justify-content: center;
 }
 .navbar{
   background-color: #1b2431;
-  align-items: stretch;
   display: flex;
 }
+
 .navbar-brand {
 
   background-color: #bcbdc0;
@@ -128,7 +128,7 @@ justify-content: center;
 
 #iss{
   font-size: 3rem;
-
+  text-align: center;
 }
 #facts{
   font-size: 2rem;
@@ -140,7 +140,7 @@ justify-content: center;
     white-space: nowrap;
     font-size: 0.7rem;
   }
-  
+
 #banner{
   display: none;
 }
@@ -159,9 +159,7 @@ justify-content: center;
   font-size: 1rem;
 }
 }
-#navlogo{
-  display: none;
-}
+
 
 .notification.is-info{
   background-color: #1b2431;
@@ -192,6 +190,7 @@ margin-bottom:25px;
 #Sdate {
   font-size: 2vw;
   text-align: center;
+  color:white;
 }
 
 #spaceTitle {
@@ -236,6 +235,11 @@ justify-content: center;
   margin-bottom: -30px;;
 }
 
+#currentT{
+  font-size: 1.5vw;
+  text-align: center;
+  color: aliceblue;
+}
 #satName, #satName2, #satName3{
   font-size:25px;
 }
@@ -269,15 +273,28 @@ justify-content: center;
   height: 100%;
 }
 
+
+/* IphoneX size */
 @media only screen and (max-width: 812px) and (min-width: 375px){
 
   #titleApp{
     font-size: 4rem;
   }
-
+  .sub-head{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
   #apodLink{
     white-space: nowrap;
     font-size: 0.7rem;
+  }
+  #navlogo{
+    display: none;
+  }
+  #currentT{
+    font-size: 3.5vw;
+    text-align: center;
+    color: aliceblue;
   }
 }
 

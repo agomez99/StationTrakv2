@@ -3,7 +3,7 @@
 $(document).ready(function () {
   //TODAY APOD
   var space2 =
-    "https://api.nasa.gov/planetary/apod?api_key=6wtOGAAHfePL0YCbGqDvlmplvw5Rlqkm1PmoVO0v";
+    "https://api.nasa.gov/planetary/apod?api_key=RfKWkoYrn7N6w0tIX57JIbQafgqh3fV2Oo4zCbfd";
 
   //NOAA19
   const NOAA19 = "33591";
@@ -29,6 +29,9 @@ $(document).ready(function () {
   var cords2 = getCoords2;
   var cords3 = getCoords3;
   var cords4 = getCoords4;
+
+  var d = new Date();
+  document.getElementById("currentT").innerHTML = d;
 
 
   //APOD
