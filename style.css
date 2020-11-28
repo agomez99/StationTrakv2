@@ -140,6 +140,11 @@ text-align: center;
   margin-left:auto;
   margin-right:auto;
 }
+
+#roster-col{
+  margin-left:30%;
+  margin-right: 30%;
+}
 @media only screen and (max-width: 990px) {
 
   
@@ -304,6 +309,20 @@ justify-content: center;
     color: aliceblue;
   }
 
+  #roster-col{
+    margin-left:5%;
+    margin-right: 5%;
+  }
+
+  #roster-container{
+    margin-left: 1%;
+  }
+  .columns{
+    padding:2%;
+  }
+  #iss{
+    margin-top: -40%;
+  }
 }
 
 
