@@ -9,6 +9,9 @@
 	<title class="title-S">StationTrak</title>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
   
@@ -52,6 +55,72 @@
 			<iframe src="https://isstracker.pl/widget/map?disableInfoBox=1&lang=en"  style="width:100%;height:500px"></iframe>
 		
 		</div>
+
+
+		<div class="w3-container">
+			<div style="font-size: 1.5rem; font-weight: bold; color:white" class="column">
+				<h3><a  style="font-size: 2rem" href="https://isstracker.pl/en/astronauci" >Current ISS Roster</a></h3>		<ul class="w3-ul w3-card-4">
+		  <li class="w3-bar">
+			<img src="https://static.isstracker.pl/images/astronauts/5/85/md/md-sergey-kud-sverchkov-img-1485.jpeg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			<div class="w3-bar-item">
+			  <span class="w3-large">Sergey Kud-Sverchkov (ISS)</span><br>
+			  <span>Flight Engineer</span>
+			</div>
+		  </li>
+	  
+		  <li class="w3-bar">
+			<img src="https://static.isstracker.pl/images/astronauts/2/42/md/md-victor-j-glover-img-1442.jpeg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			<div class="w3-bar-item">
+			  <span class="w3-large">Victior Glover (ISS)</span><br>
+			  <span>Support</span>
+			</div>
+		  </li>
+	  
+		  <li class="w3-bar">
+			<img src="https://static.isstracker.pl/images/astronauts/6/86/sm/sm-sergey-ryzhikov-img-thumb-1486.jpeg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			<div class="w3-bar-item">
+			  <span class="w3-large">Sergey Ryzhikov (ISS)</span><br>
+			  <span>Accountant</span>
+			</div>
+		  </li>
+
+			<li class="w3-bar">
+			  <img src="https://airandspace.si.edu/sites/default/files/styles/callout_half/public/Kate%20Rubins.jpg?itok=_f6Ia5QG&c=8f4bef6e4882b3b2599e7ce7e8373f68" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			  <div class="w3-bar-item">
+				<span class="w3-large">Kate Rubins</span><br>
+				<span>Web Designer</span>
+			  </div>
+			</li>
+		
+			<li class="w3-bar">
+			  <img src="https://pbs.twimg.com/profile_images/2019585684/jsc2009e244956_400x400.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			  <div class="w3-bar-item">
+				<span class="w3-large">Mike Hopkins</span><br>
+				<span>Support</span>
+			  </div>
+			</li>
+		
+			<li class="w3-bar">
+			  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/ShannonWalker.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			  <div class="w3-bar-item">
+				<span class="w3-large">Shannon Walker</span><br>
+				<span>Accountant</span>
+			  </div>
+			</li>
+		  <li class="w3-bar">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Soichi_noguchi_v2.jpg/220px-Soichi_noguchi_v2.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+			<div class="w3-bar-item">
+			  <span class="w3-large">Soichi Noguchi </span><br>
+			  <span>Accountant</span>
+			</div>
+		  </li>
+		</ul>
+
+	  </div>
+
+
+
+
 		<div class="columns">
 			<div class="column" style="margin-left:5%;margin-right:5%;">
 				<div class="column is-full" id="apod">
@@ -91,93 +160,6 @@
 
 
 
-
-
-		<!-- <div id="map-header" class="level-item"><p>Other satellites</p></div>  -->
-    <!--=========middle tile column with iss info and logo-->
-	<!-- <div  id="issColumn">
-		<article class="tile is-parent notification is-info is-medium" id="plots">
-			<h1 id="timeStamp"></h1>
-			<br></br>
-			<div class="Row">
-				<div class="Column">
-					<h1 id="satName"></h1>
-					<p id="positionx"></p>
-					<p id="positiony"></p>
-					<p id="positionz"></p>
-					<p id="alt"></p>
-
-					<img src="./img/marker.png" style="height:50px" />
-				</div>
-
-				<br></br>
-				<div class="Column">
-					<h1 id="satName2"></h1>
-					<p id="position2"></p>
-					<p id="positionx2"></p>
-					<p id="positiony2"></p>
-					<p id="positionz2"></p>
-					<p id="alt2"></p>
-
-					<img src="./img/marker2.png" style="height:50px"/>
-
-				</div>
-				<br></br>
-	
-				<div class="Column">
-					<h1 id="satName3"></h1>
-					<p id="position3"></p>
-					<p id="positionx3"></p>
-					<p id="positiony3"></p>
-					<p id="positionz3"></p>
-					<p id="alt3"></p>
-
-					<img src="./img/marker3.png" style="height:50px" />
-
-				</div>
-
-			</div>
-			<div class="Row">
-				
-				<div class="Column">
-					<h1 id="satName4"></h1>
-					<p id="position4"></p>
-					<p id="positionx4"></p>
-					<p id="positiony4"></p>
-					<p id="positionz4"></p>
-					<p id="alt4"></p>
-
-					<img src="./img/marker4.png" style="height:50px" />
-
-				</div>
-			</div>
-		</article>
-	</div>
-
-
-	<div class="container" >
-</div>
-</div>
-<div id="map-container" class="level is-mobile">
-	<div id='map' class="level-item is-centered" >
-	</div>
-</div> -->
-
-<!--====APOP tile-->
-	</div>
-	<div class="sm-6" id="apod">
-		<article class="tile is-parent notification is-info">
-			<div class="content">
-				<p class="title">NASA Astronomy Picture of the Day (APOD)</p>
-				<h2 id="Sdate"></h2> 
-				<h2 id="spaceTitle"></h2>
-				<div class="img-apod">
-				<img id="spaceImg" src="" alt="Astromony Picture of the Day not loaded">
-			  </div>
-				<h5 id="info"></h5>
-			</div>
-		</article>
-	</div>
 
 	<footer>
 		<div>

@@ -133,6 +133,13 @@ justify-content: center;
 #facts{
   font-size: 2rem;
 }
+
+
+#roster{
+text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
 @media only screen and (max-width: 990px) {
 
   
