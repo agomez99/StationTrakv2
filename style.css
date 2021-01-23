@@ -145,6 +145,16 @@ text-align: center;
   margin-left:30%;
   margin-right: 30%;
 }
+
+
+#share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+  }
+   
 @media only screen and (max-width: 990px) {
 
   
