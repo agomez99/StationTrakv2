@@ -1,12 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000000;  /* fallback for old browsers */
-  font-family: 'Raleway', sans-serif;
+  background: #000000; /* fallback for old browsers */
+  font-family: "Raleway", sans-serif;
 }
-.content{
+.content {
   background-color: #000000;
-
 }
 a {
   color: white;
@@ -14,25 +13,24 @@ a {
   display: inline-block;
 }
 
-.h1, p.title {
+.h1,
+p.title {
   font-size: 3vw;
 }
 
-.sub-head{
-margin-bottom: 15px;
-font-size:3rem;
-display:flex;
-align-items: center;
-justify-content: center;
-
+.sub-head {
+  margin-bottom: 15px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.navbar{
-  background-color: #00273F;
+.navbar {
+  background-color: #00273f;
   display: flex;
 }
 
 .navbar-brand {
-
   background-color: #bcbdc0;
   align-items: stretch;
   display: inline;
@@ -64,7 +62,6 @@ justify-content: center;
   text-align: center;
   display: inline;
   padding-bottom: 5%;
-
 }
 
 .title {
@@ -102,49 +99,48 @@ justify-content: center;
   line-height: 1em;
 }
 
-#titleApp, #animateT {
+#titleApp,
+#animateT {
   text-align: center;
   font-family: Helvetica;
   font-size: 9vw;
   font-family: sans-serif;
   font-weight: bold;
   align-self: center;
-  color: #0B76DE;
+  color: #0b76de;
   text-shadow: 2px 2px #1c1a74;
 }
 
 #issColumn {
-  font-size:1rem;
-  display:inline-block;
+  font-size: 1rem;
+  display: inline-block;
   padding-bottom: 5%;
-
 }
 
-#apodLink, #virtual {
+#apodLink,
+#virtual {
   color: white;
   padding: 20px;
 }
 
-#iss{
+#iss {
   font-size: 3rem;
   text-align: center;
 }
-#facts{
+#facts {
   font-size: 2rem;
 }
 
-
-#roster{
-text-align: center;
-  margin-left:auto;
-  margin-right:auto;
+#roster {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#roster-col{
-  margin-left:30%;
+#roster-col {
+  margin-left: 30%;
   margin-right: 30%;
 }
-
 
 #share-buttons img {
   width: 35px;
@@ -152,37 +148,9 @@ text-align: center;
   border: 0;
   box-shadow: 0;
   display: inline;
-  }
-   
-@media only screen and (max-width: 990px) {
-
-  
-  #apodLink{
-    white-space: nowrap;
-    font-size: 0.7rem;
-  }
-
-#banner{
-  display: none;
-}
-#titleApp{
-  font-size: 9vh;
-
-}
-#iss{
-  font-size: 1rem;
-}
-.sub-head{
-  font-size:2rem;
-
-}
-#facts{
-  font-size: 1rem;
-}
 }
 
-
-.notification.is-info{
+.notification.is-info {
   background-color: #1b2431;
 }
 span {
@@ -191,27 +159,26 @@ span {
 
 #info {
   font-size: 3vh;
-  color:white;
-  padding:20px;
+  color: white;
+  padding: 20px;
 }
-.title{
+.title {
   text-align: center;
   padding-top: 5%;
 }
 #spaceImg {
   width: 600px;
-
 }
-.img-apod{
-  display:flex;
-align-items: center;
-justify-content: center;
-margin-bottom:25px;
+.img-apod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 #Sdate {
   font-size: 2vw;
   text-align: center;
-  color:white;
+  color: white;
 }
 
 #spaceTitle {
@@ -219,15 +186,15 @@ margin-bottom:25px;
 }
 
 #map-header {
-  padding-top:3%;
-  color:white;
-  font-size:2rem;
+  padding-top: 3%;
+  color: white;
+  font-size: 2rem;
 }
 
-#plots{
-  padding:10px;
-  display:inline-table;
-  margin-left:5%;
+#plots {
+  padding: 10px;
+  display: inline-table;
+  margin-left: 5%;
   margin-right: 5%;
 }
 .Row {
@@ -235,38 +202,38 @@ margin-bottom:25px;
   width: 90%; /*Optional*/
   table-layout: fixed; /*Optional*/
   text-align: left;
-  
 }
 .Column {
   display: table-cell;
   text-align: center;
-  width:450px;
-align-items: center;
-justify-content: center;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
 }
-.sat-title{
+.sat-title {
   font-size: 45px;
-  text-align:center;
-
+  text-align: center;
 }
 
-#timeStamp{
+#timeStamp {
   text-align: center;
   font-size: 15px;
-  margin-bottom: -30px;;
+  margin-bottom: -30px;
 }
 
-#currentT{
+#currentT {
   font-size: 1.5vw;
   text-align: center;
   color: aliceblue;
 }
-#satName, #satName2, #satName3{
-  font-size:25px;
+#satName,
+#satName2,
+#satName3 {
+  font-size: 25px;
 }
 
-#apod{
-  width:flex;
+#apod {
+  width: flex;
 }
 
 .center {
@@ -293,47 +260,67 @@ justify-content: center;
   width: 100%;
   height: 100%;
 }
-
-
-/* IphoneX size */
-@media only screen and (max-width: 812px) and (min-width: 375px){
-  #iframe.column{
-    padding-left:0;
-  }
-  #titleApp{
-    font-size: 4rem;
-  }
-  .sub-head{
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  #apodLink{
+@media only screen and (max-width: 990px) {
+  #apodLink {
     white-space: nowrap;
     font-size: 0.7rem;
   }
-  #navlogo, #navlogo2{
+
+  #banner {
     display: none;
   }
-  #currentT{
+  #titleApp {
+    font-size: 9vh;
+  }
+  #iss {
+    font-size: 1rem;
+  }
+  .sub-head {
+    font-size: 2rem;
+  }
+  #facts {
+    font-size: 1rem;
+  }
+}
+
+/* IphoneX size */
+@media only screen and (max-width: 812px) and (min-width: 375px) {
+  #iframe.column {
+    padding-left: 0;
+  }
+  #titleApp {
+    font-size: 4rem;
+  }
+  .sub-head {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  #apodLink {
+    white-space: nowrap;
+    font-size: 0.7rem;
+  }
+  #navlogo,
+  #navlogo2 {
+    display: none;
+  }
+  #currentT {
     font-size: 3.5vw;
     text-align: center;
     color: aliceblue;
   }
 
-  #roster-col{
-    margin-left:5%;
+  #roster-col {
+    margin-left: 5%;
     margin-right: 5%;
   }
 
-  #roster-container{
+  #roster-container {
     margin-left: 1%;
   }
-  .columns{
-    padding:2%;
+  .columns {
+    padding: 2%;
   }
-  #iss{
+  #iss {
     margin-top: -40%;
   }
 }
-
-
