@@ -298,7 +298,9 @@ justify-content: center;
 
 /* IphoneX size */
 @media only screen and (max-width: 812px) and (min-width: 375px){
-
+  #iframe.column{
+    padding-left:0;
+  }
   #titleApp{
     font-size: 4rem;
   }
