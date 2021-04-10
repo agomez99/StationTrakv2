@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #0897da;  /* fallback for old browsers */
+  background: #000000;  /* fallback for old browsers */
   font-family: 'Raleway', sans-serif;
 }
 .content{
@@ -27,7 +27,7 @@ justify-content: center;
 
 }
 .navbar{
-  background-color: #1b2431;
+  background-color: #00273F;
   display: flex;
 }
 
@@ -109,7 +109,7 @@ justify-content: center;
   font-family: sans-serif;
   font-weight: bold;
   align-self: center;
-  color: white;
+  color: #0B76DE;
   text-shadow: 2px 2px #1c1a74;
 }
 
@@ -120,8 +120,7 @@ justify-content: center;
 
 }
 
-#apodLink {
-  font-size: 2vh;
+#apodLink, #virtual {
   color: white;
   padding: 20px;
 }
