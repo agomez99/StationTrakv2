@@ -1,8 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000000; /* fallback for old browsers */
   font-family: "Raleway", sans-serif;
+  background-image: url('images/nebula.jpg');
+  background-repeat: no-repeat;
+  background-color: #000000;
 }
 .content {
   background-color: #000000;
@@ -19,6 +21,7 @@ p.title {
 }
 
 .sub-head {
+  color: cornsilk;
   margin-bottom: 15px;
   font-size: 3rem;
   display: flex;
