@@ -29,6 +29,8 @@ p.title {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 2px 2px #1c1a74;
+
 }
 .navbar {
   background-color: #00273f;
@@ -88,6 +90,37 @@ p.title {
 }
 .currentPeople{
   display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#spacepeeps{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#astronames{
+  text-align: center;
+  list-style: none;
+}
+.livevid{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+}
+.issfacts{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+}
+IMG.factsimg{
+  height:350px;
+  width:900px;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .apod {
   display: flex;
@@ -133,20 +166,22 @@ p.title {
 #iss {
   font-size: 3rem;
   text-align: center;
+  text-shadow: 2px 2px #602add;
+
 }
 #facts {
   font-size: 2rem;
 }
 
-#roster {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 #roster-col {
   margin-left: 30%;
   margin-right: 30%;
+  margin-bottom: 8%;
+  background-color:#0b3f72;
+  text-shadow: 2px 2px #1c1a74;
+
 }
 
 #share-buttons img {
