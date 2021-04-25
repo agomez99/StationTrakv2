@@ -86,7 +86,9 @@ p.title {
 .section {
   padding: 0;
 }
-
+.currentPeople{
+  display: inline-block;
+}
 .apod {
   display: flex;
   align-self: center;

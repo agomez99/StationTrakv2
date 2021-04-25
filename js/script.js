@@ -31,7 +31,7 @@ spacePeople().then((spaceData) =>
 
 $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
     var number = data['number'];
-    $('#spacepeeps').html(number);
+    $('#spacepeeps').html(number + "  People currently in space");
 
     data['people'].forEach(function (d) {
          $('#astronames').append('<li>' + d['name'] + '</li>');
