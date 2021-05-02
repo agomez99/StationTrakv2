@@ -1,7 +1,4 @@
 
-
-$(document).ready(function () {
-
   if (window.location.protocol.indexOf('https') == 0){
     var el = document.createElement('meta')
     el.setAttribute('http-equiv', 'Content-Security-Policy')
@@ -135,7 +132,6 @@ $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
     //   ":" +
     //   seconds
     // );
-  });
 
   // $.ajax({
   //   url: cords2,
