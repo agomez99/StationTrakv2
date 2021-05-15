@@ -173,7 +173,12 @@ IMG.factsimg{
   font-size: 2rem;
 }
 
-
+.pdfnasa{
+  height:900px;
+	width:800px;
+	min-width:auto;
+	min-height:auto;
+}
 
 #roster-col {
   margin-left: 30%;
@@ -364,5 +369,14 @@ span {
   }
   #iss {
     margin-top: -40%;
+  }
+  .pdfnasa{
+    height:100%;
+    width:100%;
+    min-width:auto;
+    min-height:auto;
+  }
+  .tweetdiv{
+    width:80px
   }
 }
