@@ -107,7 +107,7 @@ p.title {
   display:block;
   margin-left: auto;
   margin-right: auto;
-  width:40%;
+  width:35%;
 }
 .issfacts{
   display:block;
@@ -372,9 +372,8 @@ span {
   }
   .pdfnasa{
     height:100%;
-    width:100%;
-    min-width:auto;
-    min-height:auto;
+    width:200px;
+
   }
   .tweetdiv{
     width:80px
