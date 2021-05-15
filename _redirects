@@ -1,0 +1,2 @@
+http://api.open-notify.org/astros.json/* https://api.open-notify.org/astros.json/:splat 301!
+https://api.open-notify.org/astros.json/* http://api.open-notify.org/astros.json/:splat 301!
