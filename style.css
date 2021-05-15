@@ -111,9 +111,9 @@ p.title {
 }
 .issfacts{
   display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width:60%;
+  margin-left: 33%;
+  margin-right: 33%;
+  width:100%;
 }
 IMG.factsimg{
   height:350px;
@@ -245,10 +245,10 @@ span {
   table-layout: fixed; /*Optional*/
   text-align: left;
 }
-.Column {
+.column {
   display: table-cell;
   text-align: center;
-  width: 450px;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
