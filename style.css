@@ -84,7 +84,12 @@ p.title {
   z-index: 3;
   display: flex;
 }
-
+#tweetdiv{
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+  padding:5px;
+}
 .section {
   padding: 0;
 }
@@ -107,7 +112,6 @@ p.title {
   display:block;
   margin-left: auto;
   margin-right: auto;
-  width:35%;
 }
 .issfacts{
   display:block;
@@ -375,7 +379,5 @@ span {
     width:200px;
 
   }
-  .tweetdiv{
-    width:80px
-  }
+
 }
