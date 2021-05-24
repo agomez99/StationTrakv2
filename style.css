@@ -2,20 +2,29 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  background-image: url('images/nebula.jpg');
+  background-image: url("images/nebula.jpg");
   background-repeat: no-repeat;
   background-color: #000000;
 }
 .content {
-  background-color: #000000;  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+  background-color: #000000;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 a {
   color: white;
-  font-size: 1.3vw;
   display: inline-block;
 }
+
 
 .h1,
 p.title {
@@ -30,18 +39,13 @@ p.title {
   align-items: center;
   justify-content: center;
   text-shadow: 2px 2px #1c1a74;
-
 }
 .navbar {
   background-color: #00273f;
   display: flex;
+  height:100px;
 }
 
-.navbar-brand {
-  background-color: #bcbdc0;
-  align-items: stretch;
-  display: inline;
-}
 
 .navbar-menu {
   background: none;
@@ -51,14 +55,27 @@ p.title {
   font-size: 3em;
   width: 100;
 }
+.navbar-link{
+  margin-right: 100px;
+}
+.navbar-link:hover{
+  background-color: rgb(106, 163, 250);
 
+}
 .navbar-item {
   color: white;
   padding: 0;
   list-style: none;
-  font-size: 8em;
+  padding-right: 15px;
+  font-size: 2.5vh;
 }
-
+a.navbar-item:hover{
+  background-color: rgb(106, 163, 250);
+  color:white;
+}
+.navbar-dropdown{
+  background-color: rgb(106, 163, 250);
+}
 .control {
   text-align: center;
 }
@@ -84,45 +101,45 @@ p.title {
   z-index: 3;
   display: flex;
 }
-#tweetdiv{
-  margin-left:auto;
+#tweetdiv {
+  margin-left: auto;
   margin-right: auto;
   display: block;
-  padding:5px;
+  padding: 5px;
 }
 .section {
   padding: 0;
 }
-.currentPeople{
+.currentPeople {
   display: inline-block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-#spacepeeps{
+#spacepeeps {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-#astronames{
+#astronames {
   text-align: center;
   list-style: none;
 }
-.livevid{
-  display:block;
+.livevid {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.issfacts{
-  display:block;
+.issfacts {
+  display: block;
   margin-left: 33%;
   margin-right: 33%;
-  width:100%;
+  width: 100%;
 }
-IMG.factsimg{
-  height:350px;
-  width:900px;
-  display:block;
+IMG.factsimg {
+  height: 350px;
+  width: 900px;
+  display: block;
   margin-right: auto;
   margin-left: auto;
 }
@@ -171,26 +188,24 @@ IMG.factsimg{
   font-size: 3rem;
   text-align: center;
   text-shadow: 2px 2px #602add;
-
 }
 #facts {
   font-size: 2rem;
 }
 
-.pdfnasa{
-  height:900px;
-	width:800px;
-	min-width:auto;
-	min-height:auto;
+.pdfnasa {
+  height: 900px;
+  width: 800px;
+  min-width: auto;
+  min-height: auto;
 }
 
 #roster-col {
   margin-left: 30%;
   margin-right: 30%;
   margin-bottom: 8%;
-  background-color:#0b3f72;
+  background-color: #0b3f72;
   text-shadow: 2px 2px #1c1a74;
-
 }
 
 #share-buttons img {
@@ -277,11 +292,7 @@ span {
   text-align: center;
   color: aliceblue;
 }
-#satName,
-#satName2,
-#satName3 {
-  font-size: 25px;
-}
+
 
 #apod {
   width: flex;
@@ -350,9 +361,17 @@ span {
     white-space: nowrap;
     font-size: 0.7rem;
   }
+  .navbar {
+    background-color: #00273f;
+    display: flex;
+    height:200px;
+  }
   #navlogo,
   #navlogo2 {
     display: none;
+  }
+  .navbar-dropdown{
+   display: none;
   }
   #currentT {
     font-size: 3.5vw;
@@ -374,10 +393,8 @@ span {
   #iss {
     margin-top: -40%;
   }
-  .pdfnasa{
-    height:100%;
-    width:200px;
-
+  .pdfnasa {
+    height: 100%;
+    width: 200px;
   }
-
 }

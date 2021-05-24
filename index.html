@@ -35,15 +35,60 @@
 <body>
 	<header>
 		<div>
-			<nav aria-label="main navigation" class="navbar" role="navigation">
+			<!-- <nav aria-label="main navigation" class="navbar" role="navigation">
 				<div class="navbar-start">
 					<img alt="logo" id="navlogo" src="images/isslogo2.jpg" style="width:150px;height:100px;">
 				</div>
 				<a href="#virtuallink">Virtual Tour
-					<a aria-expanded="false" aria-label="menu" class="navbar-burger" role="button"><span
-							aria-hidden="true"></span> <span aria-hidden="true"></span> <span
-							aria-hidden="true"></span></a>
-			</nav>
+	
+			</nav> -->
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+			
+				  <div class="navbar-start">
+					<div class="navbar-brand">
+						<a href="/">
+							<figure class="image is-128x128">
+								<img src="images/isslogo2.jpg">
+							</figure>				 
+						   </a>
+					  </div>
+					
+					</div>
+		
+			  
+				  <div class="navbar-end">
+					<a class="navbar-item" href="#livevid">
+						Live Feed🔴
+					  </a>
+				
+					  <a class="navbar-item" href="#tour">
+						Virtual Tour
+					  </a>
+				
+					  <div class="navbar-item  is-hoverable">
+						<a class="navbar-link">
+						  More
+						</a>
+				
+						<div class="navbar-dropdown">
+						  <a class="navbar-item" href="https://www.nasa.gov/">
+							Nasa
+						  </a>
+						  <a class="navbar-item" href="https://www.nasa.gov/mission_pages/station/main/index.html">
+							ISS
+						  </a>
+						  <a class="navbar-item" href = "mailto: agdevelop3r@gmail.com">
+							Contact me (Email)
+						  </a>
+						  <hr class="navbar-divider">
+						  <a class="navbar-item">
+							Report an issue
+						  </a>
+
+					</div>
+				  </div>
+				</div>
+			  </nav>
 		</div>
 	</header>
 	<div>
@@ -98,17 +143,17 @@
 		<div class="columns is-mobile">
 			<div class="column">
 		<h1 style="color:white; text-align: center;">Live Feed🔴</h1>
-		<div class="livevid">
+		<div class="livevid" id="livevid">
 			<iframe width="480" height="270" src="https://ustream.tv/embed/9408562" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0px; max-width: 100%; width: 620px; height: 450px;"></iframe>
 		</div>
 		</div>
 		</div>
-		<h1 id="virtuallink" style=" text-align:center; font-size: 2rem; color: white; margin-bottom: 20px;">Virtual
+		<h1  id="tour" style=" text-align:center; font-size: 2rem; color: white; margin-bottom: 20px;">Virtual
 			Tour of
 			The International Space Station🌏</h1>
 
 		<div class="columns is-mobile">
-			<div class="column"  style="padding:10px">
+			<div class="column"style="padding:10px">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m0!4v1500879586359!6m8!1m7!1szChzPIAn4RIAAAQvxgbyEg!2m2!1d29.56028532748453!2d-95.08539144618427!3f212.09!4f-56.26!5f0.7820865974627469"
 					frameborder="0" width="600" height="450"
@@ -121,7 +166,7 @@
 
 		<div class="columns is-mobile">
 			<div class="column">
-				<div >
+				<div  >
 					<h2 style="color:white; text-align:center">International Space Station Fun Facts</h2>
 				</div>
 					<embed  class="pdfnasa" src="images/nasa.pdf#toolbar=0&view=FitH" type="application/pdf">
