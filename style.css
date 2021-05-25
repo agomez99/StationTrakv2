@@ -6,28 +6,14 @@ body {
   background-repeat: no-repeat;
   background-color: #000000;
 }
-.content {
-  background-color: #000000;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 a {
   color: white;
   display: inline-block;
 }
 
 
-.h1,
-p.title {
+.h1{
   font-size: 3vw;
 }
 
@@ -46,15 +32,6 @@ p.title {
   height:100px;
 }
 
-
-.navbar-menu {
-  background: none;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  font-size: 3em;
-  width: 100;
-}
 .navbar-link{
   margin-right: 100px;
 }
@@ -76,31 +53,14 @@ a.navbar-item:hover{
 .navbar-dropdown{
   background-color: rgb(106, 163, 250);
 }
-.control {
-  text-align: center;
-}
 
-.ISSPanel {
-  background-color: #000000;
-  z-index: 5;
-  text-align: center;
-  display: inline;
-  padding-bottom: 5%;
-}
 
 .title {
   text-align: center;
   font-size: 3vw;
 }
 
-.tile:not(.is-child) {
-  display: block;
-}
 
-.spacediv {
-  z-index: 3;
-  display: flex;
-}
 #tweetdiv {
   margin-left: auto;
   margin-right: auto;
@@ -130,35 +90,8 @@ a.navbar-item:hover{
   margin-left: auto;
   margin-right: auto;
 }
-.issfacts {
-  display: block;
-  margin-left: 33%;
-  margin-right: 33%;
-  width: 100%;
-}
-IMG.factsimg {
-  height: 350px;
-  width: 900px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-.apod {
-  display: flex;
-  align-self: center;
-}
 
-.ml12 {
-  font-weight: 200;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-}
 
-.ml12 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
 
 #titleApp,
 #animateT {
@@ -172,11 +105,6 @@ IMG.factsimg {
   text-shadow: 2px 2px #1c1a74;
 }
 
-#issColumn {
-  font-size: 1rem;
-  display: inline-block;
-  padding-bottom: 5%;
-}
 
 #apodLink,
 #virtual {
@@ -188,9 +116,6 @@ IMG.factsimg {
   font-size: 3rem;
   text-align: center;
   text-shadow: 2px 2px #602add;
-}
-#facts {
-  font-size: 2rem;
 }
 
 .pdfnasa {
@@ -216,59 +141,16 @@ IMG.factsimg {
   display: inline;
 }
 
-.notification.is-info {
-  background-color: #1b2431;
-}
 span {
   display: inline-block;
 }
 
-#info {
-  font-size: 3vh;
-  color: white;
-  padding: 20px;
-}
+
 .title {
   text-align: center;
   padding-top: 5%;
 }
-#spaceImg {
-  width: 600px;
-}
-.img-apod {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-#Sdate {
-  font-size: 2vw;
-  text-align: center;
-  color: white;
-}
 
-#spaceTitle {
-  text-align: center;
-}
-
-#map-header {
-  padding-top: 3%;
-  color: white;
-  font-size: 2rem;
-}
-
-#plots {
-  padding: 10px;
-  display: inline-table;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.Row {
-  display: table;
-  width: 90%; /*Optional*/
-  table-layout: fixed; /*Optional*/
-  text-align: left;
-}
 .column {
   display: table-cell;
   text-align: center;
@@ -276,16 +158,7 @@ span {
   align-items: center;
   justify-content: center;
 }
-.sat-title {
-  font-size: 45px;
-  text-align: center;
-}
 
-#timeStamp {
-  text-align: center;
-  font-size: 15px;
-  margin-bottom: -30px;
-}
 
 #currentT {
   font-size: 1.5vw;
@@ -294,23 +167,6 @@ span {
 }
 
 
-#apod {
-  width: flex;
-}
-
-.center {
-  display: block;
-  margin-left: 60%;
-  margin-right: auto;
-  width: 50%;
-}
-
-.container2 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
 
 /* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
